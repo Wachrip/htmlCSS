@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="drag.css" />
+    <title>Document</title>
+    <script src="drag.js"></script>
+  </head>
+  <body>
+    <div id="shop">
+      <div id="shirt" data-price="15" draggable="true">
+        Футболка
+        <h5>Цвет: синий</h5>
+        <h5>Размер: L</h5>
+        <h5>Стоимость: 15$</h5>
+      </div>
+      <div id="pants" data-price="30" draggable="true">
+        Шорты
+        <h5>Цвет: зеленый</h5>
+        <h5>Размер: M</h5>
+        <h5>Стоимость: 30$</h5>
+      </div>
+      <div id="boots" data-price="50" draggable="true">
+        Кроссовки
+        <h5>Цвет: Белый</h5>
+        <h5>Размер: 42-43</h5>
+        <h5>Стоимость: 50$</h5>
+      </div>
+    </div>
+
+    <div id="cart">
+      <div id="target">Перенести в эту область</div>
+      <div id="summ">Сумма заказа: <span></span>$</div>
+    </div>
+  </body>
+</html>
