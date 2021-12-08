@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>translate</title>
+    <script>
+      window.addEventListener("load", init, false);
+      function init() {
+        var context = document.getElementById("canvas").getContext("2d");
+        context.clearRect(0, 0, 400, 400);
+        for (var i = 40; i < 400; i += 40) {
+          drawLineLeftToRight(context, i);
+          drawLifeTopToBottom(i, context);
+        }
+        context.stroke();
+
+        function drawLineLeftToRight(context, y) {
+          context.moveTo(0, y);
+          context.lineTo(400, y);
+        }
+
+        function drawLifeTopToBottom(x, context) {
+          context.moveTo(x, 0);
+          context.lineTo(x, 400);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="canvas" width="400px" height="400px"></canvas>
+  </body>
+</html>
