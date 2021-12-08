@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web Workers</title>
+
+    <script>
+      window.onload = function () {
+        if (window.Worker) {
+          var input1 = document.querySelector("#input1");
+          var input2 = document.querySelector("#input2");
+          var result = document.querySelector("#result");
+
+          var plus = document.querySelector("#plus");
+          var minus = document.querySelector("#minus");
+          var div = document.querySelector("#div");
+          var mult = document.querySelector("#mult");
+
+          plus.onclick = function () {
+            var worker1 = new Worker("plus.js");
+            worker1.postMessage([input1.value, input2.value]);
+
+            worker1.onmessage = function (e) {
+              result.textContent = e.data;
+            };
+          };
+
+          minus.onclick = function () {
+            var worker2 = new Worker("minus.js");
+            worker2.postMessage([input1.value, input2.value]);
+
+            worker2.onmessage = function (e) {
+              result.textContent = e.data;
+            };
+          };
+
+          div.onclick = function () {
+            var worker3 = new Worker("div.js");
+            worker3.postMessage([input1.value, input2.value]);
+
+            worker3.onmessage = function (e) {
+              result.textContent = e.data;
+            };
+          };
+
+          mult.onclick = function () {
+            var worker4 = new Worker("mult.js");
+            worker4.postMessage([input1.value, input2.value]);
+
+            worker4.onmessage = function (e) {
+              result.textContent = e.data;
+            };
+          };
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <input id="input1" type="text" value="0" />
+    <br />
+    <input id="input2" type="text" value="0" />
+    <br />
+
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <br />
+    <button id="div">/</button>
+    <button id="mult">*</button>
+
+    <p id="result">0</p>
+  </body>
+</html>
