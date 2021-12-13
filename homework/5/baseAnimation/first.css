@@ -1,0 +1,137 @@
+ul {
+  list-style-type: none;
+}
+
+.block {
+  border: 1px solid black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex__space-around {
+  justify-content: space-around;
+  text-align: center;
+}
+
+.menu {
+  width: 25%;
+  height: 50px;
+  /* margin: 10px auto; */
+}
+
+.nav {
+  position: relative;
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.nav div:nth-child(1):hover {
+  background-color: red;
+  height: 200px;
+  /* opacity: 0; */
+  transition: 1s;
+  animation: testAnimate 1s;
+}
+
+.nav div:nth-child(1):hover p {
+  /* opacity: 0; */
+}
+
+.nav div:nth-child(1):hover ul {
+  opacity: 1;
+}
+
+@keyframes testAnimate {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.nav div:nth-child(2):hover {
+  background-color: red;
+  height: 200px;
+  /* opacity: 0; */
+  transition: 1s;
+  animation: testAnimate 1s;
+}
+
+.nav div:nth-child(2):hover ul {
+  opacity: 1;
+}
+
+@keyframes testAnimate {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.nav div:nth-child(3):hover {
+  background-color: red;
+  height: 200px;
+  /* opacity: 0; */
+  transition: 1s;
+  animation: testAnimate 1s;
+}
+
+.nav div:nth-child(3):hover ul {
+  opacity: 1;
+}
+
+@keyframes testAnimate {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.nav div:nth-child(4):hover {
+  background-color: red;
+  height: 200px;
+  /* opacity: 0; */
+  transition: 1s;
+  animation: testAnimate 1s;
+}
+
+.nav div:nth-child(4):hover ul {
+  opacity: 1;
+}
+
+@keyframes testAnimate {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.menu-opacity-1 {
+  opacity: 1;
+}
+
+.menu-opacity-0 {
+  opacity: 0;
+}

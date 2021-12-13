@@ -1,0 +1,134 @@
+.image-wrapper {
+  /* position: relative; */
+  width: 600px;
+  height: 400px;
+  background-image: url("images/map.png");
+  border: 1px solid black;
+}
+
+.point-hamburg {
+  width: 15px;
+  height: 15px;
+  /* background-color: red; */
+  border-radius: 50%;
+  margin-left: 342px;
+  margin-top: 106px;
+  animation: hamburgAnimation 0.5s infinite;
+}
+
+.point-hamburg:hover {
+  animation: paused;
+}
+
+.point-hamburg:hover .tickets {
+  visibility: visible;
+  /* margin-top: -20px; */
+}
+
+.point-krakow {
+  width: 15px;
+  height: 15px;
+  /* background-color: red; */
+  border-radius: 50%;
+  margin-left: 486px;
+  margin-top: 45px;
+  animation: krakowAnimation 1s infinite;
+}
+
+.point-krakow:hover {
+  animation: paused;
+}
+
+.point-krakow:hover .tickets {
+  visibility: visible;
+}
+
+.point-turin {
+  width: 15px;
+  height: 15px;
+  /* background-color: red; */
+  border-radius: 50%;
+  margin-left: 307px;
+  margin-top: 115px;
+  animation: turinAnimation 0.5s infinite;
+}
+
+.point-turin:hover {
+  animation: paused;
+}
+
+.point-turin:hover .tickets {
+  visibility: visible;
+}
+
+.point-madrid {
+  width: 15px;
+  height: 15px;
+  /* background-color: red; */
+  border-radius: 50%;
+  margin-left: 106px;
+  margin-top: 70px;
+  animation: madridAnimation 0.5s infinite;
+}
+
+.point-madrid:hover {
+  animation: paused;
+}
+
+.point-madrid:hover .tickets {
+  visibility: visible;
+}
+
+.tickets {
+  border: 1px solid black;
+  background-color: red;
+  width: 100px;
+  height: auto;
+  visibility: hidden;
+}
+
+@keyframes hamburgAnimation {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes krakowAnimation {
+  0% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes turinAnimation {
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes madridAnimation {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: white;
+  }
+}
