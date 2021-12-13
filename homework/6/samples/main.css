@@ -1,0 +1,38 @@
+header {
+  background-color: red;
+  color: yellow;
+}
+
+nav {
+  background-color: blue;
+  color: #000000;
+}
+
+aside {
+  background-color: green;
+  color: #000000;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    background-color: red;
+  }
+
+  header {
+    background-color: yellow;
+  }
+}
+article {
+  background-color: #ff00f2;
+  color: #00f7ff;
+}
+
+footer {
+  background-color: #8c00ff;
+  color: #353333;
+}
+
+h1 {
+  color: red;
+  background: #fff;
+}
